@@ -25,12 +25,13 @@ SECRET_KEY = 'jorjcl=m)lgi%96rd)h)@&s6qy$dnj$w*(-csnoyt=ls-h1n++'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.1.72"]
+ALLOWED_HOSTS = ["192.168.1.72", "localhost"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'gastos.apps.GastosConfig', # Incluimos nuestra app, ubicada en gastos/apps.py
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
